@@ -1,0 +1,60 @@
+{% extends 'docs/base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'files/central_view.css' %}">
+{% endblock css_files %}
+
+{% block title %}
+    <title>Central Cars Site</title>
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<div class="main">
+<h1> Znajdź samochód dla siebie! </h1>
+
+
+    <h2>Samochody Osobowe</h2>
+
+<ul>
+    {% for car in osobowe_cars %}
+       <li><a href="{{car.get_absolute_url}}">{{car.name}}</a></li>
+    {% endfor %}
+
+</ul>
+
+    <h2>Samochody Towarowe</h2>
+
+<ul>
+    {% for car in towarowe_cars %}
+       <li><a href="{{car.get_absolute_url}}">{{car.name}}</a></li>
+    {% endfor %}
+
+</ul>
+</div>  
+
+<div class="login_panel">
+       <p>hello {{request.user}}</p>
+
+       {% if user is not none %}
+            <p><button><a href="{% url "logout" %}">Logout</a></button></p>
+    
+       {% endif %}
+       
+       
+       
+</div>
+{% endblock content %}
+
+
+
+
+
+
+

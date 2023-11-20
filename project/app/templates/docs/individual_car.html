@@ -1,0 +1,31 @@
+{% extends 'docs/base.html' %}
+{% load static %}
+
+{% block title %} <title>{{name}}</title> {% endblock title %}
+{% block css_files %} <link rel="stylesheet" href="{% static 'files/individual.css' %}"> {% endblock css_files %}
+
+
+{% block content %}
+    <h1>{{car.name}}</h1>
+        <ul>
+        
+        <li>Typ Paliwa:{{car.fuel}}</li>
+        <li>Pojemność silnika: {{car.engine_capacity}}</li>
+        <li>Liczba drzwi: {{car.door_number}}</li>
+        <li>Liczba poduszek: {{car.number_of_airbags}}</li>
+        <li>Opis: {{car.description}}</li>
+        <li><img src="{{car.image.url}}"></li>
+        
+        </ul>
+        <Button><h1><a href="{% url "car-message" %}">Chce dowiedzieć się o dostępności samochodu</a></h1></button>
+
+
+    
+
+
+
+    
+
+    
+    
+{% endblock content %}
