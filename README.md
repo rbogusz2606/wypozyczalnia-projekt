@@ -6,6 +6,10 @@ Po kliknięciu w dany samochód zostajemy przekierowani do strony DetailView dan
 Po przejsciu w adres http z przycisku zostaje wyświetlony formularz w którym podajemy informacje użytkownika i samochód którym jesteśmy zainteresowani i klikamy "send".
 Jeżeli formularz jest poprawny zostajemy przekierowani do storny "Succes" i dane użytkownika wraz z wybranym samochodem zostają wysłane metodą post do bazy danych caravailability, którą w moim przypadku wyświetlam w panelu admin.
 
+API:
+W projekcie API dotyczy modelu Cars. Pozwala wyświetlić aktualny stan bazy, dodać do bazy obiekt, usunąć obiekt i edytować obiekt.
+
+
 WYKORZYSTANE METODY W PROJEKCIE:
 -PYTHON
 -CRUD
