@@ -10,6 +10,12 @@
     float: left;
     margin-right: 10px;
 }
+
+.login_panel a:hover {
+      text-decoration: underline;
+      color: #0066cc;
+    
+}
 .main {
     text-align: center;
     
@@ -22,3 +28,29 @@
     margin-top: 50px;
     
 }
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Stylizacja elementów listy */
+  li {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    /* Dodatkowe stylizacje */
+  }
+  
+  /* Stylizacja hiperłączy wewnątrz elementów listy */
+  li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Stylizacja hiperłączy po najechaniu myszką */
+  li a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+  }
